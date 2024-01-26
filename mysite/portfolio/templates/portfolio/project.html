@@ -1,0 +1,51 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block title %}Project{% endblock title %}
+{% block content %}
+<div class="content text-center">
+    <h1>Some Of My New Projects</h1>
+</div>
+{% comment %} container start {% endcomment %}
+<div class="container">  
+    {% comment %}row start  {% endcomment %}
+<div class="row justify-content-md-center">
+{% comment %} column 1 start {% endcomment %}
+<div class="col-md-4">
+<div class="card" style="width: 18rem;">
+    <img src="{% static 'portfolio/images/img2.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Resume Uploader</h5>
+      <p class="card-text">Django Project to preview personal resume</p>
+      <a href="#" class="btn btn-primary">Click Me</a>
+    </div>
+  </div>
+</div>
+{% comment %} column 2 start {% endcomment %}
+<div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'portfolio/images/img3.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Mini-Blog</h5>
+      <p class="card-text">Django Project using html and css simple mini blog</p>
+      <a href="#" class="btn btn-primary">Click Me</a>
+    </div>
+  </div>
+</div>
+{% comment %} column 2 ends {% endcomment %}
+{% comment %} column 3 start {% endcomment %}
+<div class="col-md-4">
+  <div class="card" style="width: 18rem;">
+    <img src="{% static 'portfolio/images/img4.jpeg' %}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Todo app</h5>
+      <p class="card-text">Django and react project mini todo app to list home groceries</p>
+      <a href="#" class="btn btn-primary">Click Me</a>
+    </div>
+  </div>
+</div>
+{% comment %} column 3 ends {% endcomment %}
+</div> 
+{% comment %} row ends {% endcomment %}
+</div>  
+{% comment %} container ends {% endcomment %}
+{% endblock content %}

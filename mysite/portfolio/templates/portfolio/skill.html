@@ -1,0 +1,61 @@
+{% extends 'portfolio/base.html' %}
+{% block title %}Skills{% endblock title %}
+{% block content %}
+<div class="content text-center mt-4 mb-3">
+    <h1>My Skills</h1>
+    <p>The skills which I learn soo far.And want to learn more.</p>
+</div>
+<div class="container">
+    <div class="row justify-content-md-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    {% comment %} progress bar start {% endcomment %}
+                    <h5>Html/css</h5>
+                    <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-success" style="width: 95%">95%</div>
+                      </div>
+                      <h5>Bootstrap</h5>
+                      <div class="progress mb-3" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-info text-dark" style="width: 80%">80%</div>
+                      </div>
+                      <h5>Javascript</h5>
+                      <div class="progress mb-3" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning text-dark" style="width: 25%">25%</div>
+                      </div>
+                      <h5>React</h5>
+                      <div class="progress mb-3" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-danger" style="width: 10%">10%</div>
+                      </div>
+                    {% comment %} progress bar end {% endcomment %}
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-body">
+                    {% comment %} progress bar start {% endcomment %}
+                    <h5>Python</h5>
+                     <div class="progress mb-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-success" style="width: 95%">95%</div>
+                      </div>
+                      <h5>Django</h5>
+                      <div class="progress mb-3" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-info text-dark" style="width: 50%">50%</div>
+                      </div>
+                      <h5>Mysql</h5>
+                      <div class="progress mb-3" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-warning text-dark" style="width: 75%">75%</div>
+                      </div>
+                      <h5>Mongodb</h5>
+                      <div class="progress mb-3" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar bg-danger" style="width: 10%">10%</div>
+                      </div>
+                      {% comment %} progress bar ends {% endcomment %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}{% endblock title %}</title>
+
+    {% comment %} css files territory {% endcomment %}
+    <link rel="stylesheet" href="{% static 'portfolio/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+    {% comment %} end of css files territory {% endcomment %}
+</head>
+<body>
+   
+    {% comment %} navbar territory start {% endcomment %}
+    {% include 'portfolio/nav.html' %}
+    {% comment %} navbar territory end {% endcomment %}
+
+    {% comment %} main content territory start {% endcomment %}
+    {% block content %}{% endblock content %}
+    {% comment %} main contetn territory end {% endcomment %}
+
+
+
+
+
+
+
+    {% comment %} javascript files territory start{% endcomment %}
+    <script src="{% static 'portfolio/js/bootstrap.js' %}"></script>
+    <script src="{% static 'protfolio/js/jquery.js' %}"></script>
+    <script src="{% static 'portfolio/js/all.min.js' %}"></script>
+    <script src="{%  static 'portfolio/js/popper.js' %}"></script>
+    {% comment %} javascript files territory end {% endcomment %}
+</body>
+</html>

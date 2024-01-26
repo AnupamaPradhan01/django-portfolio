@@ -1,0 +1,23 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+{% block title %}About{% endblock title%}
+{% block content %}
+{% comment %} <div class="content text-center mb-3">
+    <h1>About Me</h1>
+</div> {% endcomment %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-4">
+            <img src="{% static 'portfolio/images/img1.jpeg' %}" alt="" height="500px">
+        </div>
+        <div class="col-8 mt-5">
+            <h1>About Me</h1>
+            <p>Hello, it is so nice to meet you! I’m Anupama Kumari Pradhan - i started my passion 
+                towards full stack web developer from the 2020 lockdown.I graduated from Rourkela and pursuing
+                master degree from Parul University.I love to logic and design both.
+</p>
+<p>Recently, I created some of the mini projects with the technology html, css,bootstrap,django,python.</p>
+        </div>
+    </div>
+</div>
+{% endblock content%}
